@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+
+		.boxs {
+			height: 100px;
+			width: 100px;
+			background-color: gray;
+			border: solid;
+			position: absolute;
+		}
+		.firsBox {
+			background-color: white;
+			background-image: url(duckl.png);
+			background-size: 100% 100%
+		}
+
+	</style>
+</head>
+<body style="background-image: url(fon.jpg); background-size: 100% ">
+	<div class="win" style=" display: none;margin-left: auto; margin-right: auto; width: 700px; margin-top: 200px">
+		<h2 style="text-align: center; font-size: 40px">Ты выиграл</h2>
+		<img src="gubka.gif" style="margin-left: auto; margin-right: auto; width: 700px">
+	</div>
+	<div class="lose" style=" display: none;margin-left: auto; margin-right: auto; width: 700px; margin-top: 200px">
+		<h2 style="text-align: center; font-size: 40px">Ты проиграл</h2>
+		<img src="gubka2.gif" style="margin-left: auto; margin-right: auto; width: 700px">
+	</div>
+	<div style="text-align: center; margin-top: 50px; color: black; font-size: 35px; font-family: arial; color: black" class="text">
+		Помоги Губка Бобу добраться до дома, чтобы бандиты не украли его Бургеры.
+	</div>
+	
+	<div class="content col-9 mx-auto" >
+		<h4 style="margin-left: 20px; color: black"><img src="burger2.png" style="width: 70px"><span class="score">15</span></h4>
+		<img src="dice.png" class="bt" style="width: 100px; margin-left: 20px">		
+		<div class="boxs firsBox" style="margin-left: 20px">
+			<h4 class="finish">Start</h4>
+		</div>
+		<div class="boxs" style="margin-left: 130px">1</div>
+		<div class="boxs" style="margin-left: 240px">2</div>
+		<div class="boxs" style="margin-left: 350px; ">
+			<img src="game.jpg" class="w-100 h-100"></div>
+				
+		<div class="boxs" style="margin-left: 460px">4</div> 
+		<div class="boxs" style="margin-left: 570px">5</div>
+		<div class="boxs" style="margin-left: 680px">6</div>
+		<div class="boxs " style="margin-left: 790px;">
+			<img src="burger.jpg" class="w-100 h-100">
+			
+		</div>
+
+		<div class="boxs" style="margin-left: 900px">8</div>
+		<div class="boxs" style="margin-left: 1010px;" >
+			<img src="game.jpg" class="w-100 h-100">
+		</div>
+		<div class="boxs" style="margin-left: 1120px">10</div>
+		<div class="boxs" style="margin-left: 1230px">11</div>
+
+		<div class="boxs minus" style="margin-left: 1340px;background-color: orange">12 
+			<p>иди назад на -5 клеток</p>
+		</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 110px">13</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 220px">14</div>	
+		<div class="boxs" style="margin-left: 1340px; margin-top: 330px">15</div>		
+
+		<div class="boxs" style="margin-left: 1340px; margin-top: 440px">16</div>
+		<div class="boxs" style="margin-left: 1230px; margin-top: 440px;  b">
+			<img src="game.jpg" class="w-100 h-100">
+		</div>
+		<div class="boxs" style="margin-left: 1120px; margin-top: 440px">18</div>
+		<div class="boxs" style="margin-left: 1010px; margin-top: 440px">19</div>
+
+		<div class="boxs" style="margin-left: 900px; margin-top: 440px">20</div>
+		<div class="boxs" style="margin-left: 790px; margin-top: 440px;">
+			<img src="game.jpg" class="w-100 h-100">
+		</div>
+		<div class="boxs" style="margin-left: 680px; margin-top: 440px;">
+			<img src="burger.jpg" class="w-100 h-100">
+			
+		</div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 440px">23</div>
+
+		<div class="boxs" style="margin-left: 460px; margin-top: 440px">24</div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 440px;">
+			<img src="game.jpg" class="w-100 h-100">
+		</div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 440px">26</div>
+		<div class="boxs" style="margin-left: 130px; margin-top: 440px">27</div>
+
+		<div class="boxs" style="margin-left: 20px; margin-top: 440px">28</div>
+		<div class="boxs" style="margin-left: 20px; margin-top: 330px">29</div>
+		<div class="boxs minus" style="margin-left: 20px; margin-top: 220px;background-color: orange">30
+			<p>иди назад на -4 клеток</p>
+		</div>	
+		<div class="boxs" style="margin-left: 20px; margin-top: 110px">31</div>		
+
+		<!--последние дивы-->
+		<div class="boxs" style="margin-left: 130px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 460px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 680px; margin-top: 110px; background-color: green; opacity: 0"></div>
+
+	</div>	
+		
+</body>
+</html>
+
+
+
+
+
+
+<script type="text/javascript">
+	let score=document.querySelector(".score");
+	let btn=document.querySelector(".bt");
+	let box=document.querySelectorAll(".boxs");
+	let text=document.querySelector(".text");
+	let finish=document.querySelector(".finish");
+	let duck=document.querySelector(".firsboxs");
+	let win=document.querySelector(".win");
+	let lose=document.querySelector(".lose");
+	let con=document.querySelector(".content");
+	let sum=15;
+	let go=0;
+
+	alert("ПРАВИЛА ИГРЫ: дойти до 32 клетки, если бургеров меньше или равно 8, то ты проиграл, если больше 8, то ты выиграл ")
+
+	btn.onclick = function(){
+		box[go].style.backgroundImage = "none"
+		let num=Math.random()*6;
+		num=Math.round(num);
+		go=go+num;
+		alert("Выпало "+num+" иди на клетку "+go);
+		finish.innerHTML = "finish";
+		
+		box[go].style.backgroundImage = "url(duckl.png)";
+		box[go].style.backgroundSize = "100% 100%";
+
+
+		if (go ==3  ||go==9  ) {
+			box[go].style.backgroundImage = "none"
+			alert("Бургеры -2");
+			go=go-1;
+			box[go].style.backgroundImage = "url(duckl.png)";
+			box[go].style.backgroundSize = "100% 100%"
+			sum = sum-2;
+			score.innerHTML = sum
+		}	
+		if ( go==17 || go==21|| go==25 ) {
+			box[go].style.backgroundImage = "none"
+			alert("Бургеры -1");
+			go=go-1;
+			box[go].style.backgroundImage = "url(duckl.png)";
+			box[go].style.backgroundSize = "100% 100%"
+			sum = sum-1;
+			score.innerHTML = sum
+		}	
+
+
+
+		if (go>=31) {
+			box[go].style.backgroundImage = "none"
+			alert("Ураа, ты помог Губке добраться до дома с бургерами");
+			win.style.display = "block";
+			con.style.display = "none";
+			text.style.display = "none";
+			if (sum <= 8) {
+				alert("Нееееет, ты не смог помочь Губке");
+				box[go].style.backgroundImage = "none";
+				con.style.display = "none";
+				text.style.display = "none";
+				lose.style.display = "block";
+			}
+		}
+		if (go ==12) {
+			box[go].style.backgroundImage = "none"
+			alert("иди назад на -5 клеток ");
+			go=go-5;
+			box[go].style.backgroundImage = "url(duckl.png)";
+			box[go].style.backgroundSize = "100% 100%"
+		}	
+		if (go ==7|| go ==22) {
+			alert("Бургеры +2");
+			sum = sum+2;
+			score.innerHTML = sum
+			
+		}	
+		if (go ==30) {
+			box[go].style.backgroundImage = "none"
+			alert("иди назад на -4 клеток ");
+			go=go-4;
+			box[go].style.backgroundImage = "url(duckl.png)";
+			box[go].style.backgroundSize = "100% 100%"
+			
+		}	
+	}
+
+
+
+</script>
